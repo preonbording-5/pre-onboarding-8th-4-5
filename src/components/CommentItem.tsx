@@ -39,7 +39,7 @@ export default function CommentItem({
     <div className='border p-1'>
       <div className='flex justify-between'>
         <div className='flex items-center'>
-          <img alt='profile' src={profile_url} className='rounded-full'></img>
+          <img alt='profile' src={profile_url} className='rounded-full'/>
           <p className='ml-2'>{author}</p>
         </div>
         <p>{createdAt}</p>

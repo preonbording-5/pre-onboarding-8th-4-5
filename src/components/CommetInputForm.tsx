@@ -9,12 +9,12 @@ import { mode, updateCommentData } from '../redux/modeSlice';
 import { setCurrentPage } from '../redux/PageSlice';
 import { commentDataType } from '../types/types';
 
-export default function CommetInputForm() {
+export default function CommentInputForm() {
   const dispatch = useDispatch<AppDispatch>();
   const MODE = useSelector(mode);
   const currentItem = useSelector(updateCommentData);
 
-  const initailFormData = {
+  const initialFormData = {
     author: '',
     content: '',
     createdAt: '',
@@ -22,7 +22,7 @@ export default function CommetInputForm() {
   };
 
   const [formData, setFormData] =
-    useState<Partial<commentDataType>>(initailFormData);
+    useState<Partial<commentDataType>>(initialFormData);
   console.log(formData);
   useEffect(() => {
     if (MODE === updateMode) {
@@ -32,7 +32,7 @@ export default function CommetInputForm() {
 
   const onSubmitComment = async () => {
     await createComment(formData);
-    setFormData(initailFormData);
+    setFormData(initialFormData);
     await dispatch(getAllCommentsData());
     dispatch(setCurrentPage({ currentPage: 1 }));
   };

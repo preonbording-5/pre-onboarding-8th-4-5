@@ -6,16 +6,16 @@ import { getPageComments } from '../api/commentApi';
 import { COMMENT_NUMBER_ONEPAGE } from '../constants/constants';
 import { AppDispatch } from '../redux';
 import { commentsData, getAllCommentsData } from '../redux/CommentSlice';
-import { currnetPage, setTotalPage, totalPage } from '../redux/PageSlice';
+import { currentPage, setTotalPage, totalPage } from '../redux/PageSlice';
 import { commentDataType } from '../types/types';
 import CommentItem from './CommentItem';
-import CommetInputForm from './CommetInputForm';
 import Pagination from './Pagination';
+import CommentInputForm from "./CommetInputForm";
 
-export default function CommetList() {
+export default function CommentList() {
   const [pageComments, setPageComments] = useState<commentDataType[]>([]);
   const dispatch = useDispatch<AppDispatch>();
-  const currentpage = useSelector(currnetPage);
+  const currentpage = useSelector(currentPage);
   const totalpage = useSelector(totalPage);
   const commentData = useSelector(commentsData);
 
@@ -33,8 +33,8 @@ export default function CommetList() {
 
   useEffect(() => {
     const getPageCommentsData = async () => {
-      const res = await getPageComments(totalpage - currentpage + 1);
-      setPageComments(() => [...res.data].reverse());
+      const res = await getPageComments(currentpage);
+      setPageComments(() => [...res.data]);
     };
     getPageCommentsData();
   }, [totalpage, currentpage, commentData]);
@@ -52,7 +52,7 @@ export default function CommetList() {
         />
       ))}
       <Pagination />
-      <CommetInputForm />
+      <CommentInputForm />
     </div>
   );
 }

@@ -6,6 +6,7 @@ import { commentDataType } from '../types/types';
 interface dataType {
   data: commentDataType[];
 }
+
 export const getAllCommentsData = createAsyncThunk(
   'getAllCommentsData',
   async () => {

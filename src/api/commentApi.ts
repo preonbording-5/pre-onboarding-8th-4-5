@@ -11,7 +11,7 @@ export const getPageComments = (page: number) => {
     params: {
       _page: page,
       _limit: COMMENT_NUMBER_ONEPAGE,
-      _order: 'asc',
+      _order: 'desc',
       _sort: 'id',
     },
   });

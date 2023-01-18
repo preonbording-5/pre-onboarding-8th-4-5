@@ -1,10 +1,10 @@
 import React from 'react';
-import CommetList from './components/CommetList';
+import CommentList from './components/CommentList';
 
 function App() {
   return (
     <div className='App'>
-      <CommetList />
+      <CommentList />
     </div>
   );
 }
