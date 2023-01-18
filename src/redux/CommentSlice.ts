@@ -30,6 +30,5 @@ const commentsSlice = createSlice({
   },
 });
 
-export const {} = commentsSlice.actions;
 export const commentsData = (state: RootState) => state.commentSlice.data;
 export default commentsSlice.reducer;
