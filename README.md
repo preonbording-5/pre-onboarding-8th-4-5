@@ -1,46 +1,100 @@
-# Getting Started with Create React App
+# 원티드 프리온보딩 프론트엔드 4주차 과제
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🎯 과제
 
-## Available Scripts
+- 목표 : API 서버와 통신해서 작동하는 댓글 프로젝트를 Redux를 통해 구현
+- 기간 : 2023. 01. 16 ~ 2023. 01. 19
 
-In the project directory, you can run:
+<br/>
 
-### `npm start`
+## ✨ 프로젝트 실행 방법
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 클라이언트
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```
+git clone https://github.com/preonbording-5/pre-onboarding-8th-4-5
 
-### `npm test`
+npm install
+npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 서버
 
-### `npm run build`
+```md
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+npm install
+npm run api
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<br/>
 
-### `npm run eject`
+## 📌 배포 링크
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<br/>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📁 src 폴더 구조
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+src 
+├── App.tsx
+├── index.tsx
+├── index.css
+├── api
+│   ├── commentApi.ts
+│   └── instance.ts
+├── components
+│   ├── CommentItem.tsx
+│   ├── CommetInputForm.tsx
+│   ├── CommetList.tsx
+│   └── Pagination.tsx
+├── constants
+│   └── constants.ts
+├── redux
+│   ├── CommentSlice.ts
+│   ├── PageSlice.ts
+│   ├── index.tsx
+│   └── modeSlice.ts
+└── types
+    └── types.ts
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<br/>
 
-## Learn More
+## ✅ Best Practice 선정 및 개발 과정
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<br/>
+
+### ✔️ Commit Message Convention
+
+| Prefix   | Description                                                                                            |
+| -------- | ------------------------------------------------------------------------------------------------------ |
+| build    | Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)    |
+| ci       | Changes to our CI configuration files and scripts                                                      |
+| docs     | Documentation only changes                                                                             |
+| feat     | A new feature                                                                                          |
+| fix      | A bug fix                                                                                              |
+| perf     | A code change that improves performance                                                                |
+| refactor | A code change that neither fixes a bug nor adds a feature                                              |
+| style    | Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc) |
+| test     | Adding missing tests or correcting existing tests                                                      |
+
+<br/>
+
+## 💪 팀원 소개
+
+| 이름      | 개인 Repository 주소                      |
+| --------- | ----------------------------------------- |
+| 박인      | https://github.com/innie0526              |
+| 오신정    | https://github.com/ShinjungOh             |
+| 이민지    | https://github.com/vanillovin             |
+| 이정우    | https://github.com/azerose                |
+| 황성택    | https://github.com/Seongtaek-H            |
+
+<br/>
+
+## 🛠 기술 스택 및 라이브러리
+```
+React, TypeScript, tailwind, Redux Toolkit, Redux-thunk
+```
