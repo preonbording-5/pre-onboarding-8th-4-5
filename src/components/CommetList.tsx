@@ -33,8 +33,8 @@ export default function CommetList() {
 
   useEffect(() => {
     const getPageCommentsData = async () => {
-      const res = await getPageComments(totalpage - currentpage + 1);
-      setPageComments(() => [...res.data].reverse());
+      const res = await getPageComments(currentpage);
+      setPageComments(() => [...res.data]);
     };
     getPageCommentsData();
   }, [totalpage, currentpage, commentData]);
