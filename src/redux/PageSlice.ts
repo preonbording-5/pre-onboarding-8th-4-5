@@ -23,5 +23,5 @@ const pageSlice = createSlice({
 
 export const { setTotalPage, setCurrentPage } = pageSlice.actions;
 export const totalPage = (state: RootState) => state.pageSlice.totalPage;
-export const currnetPage = (state: RootState) => state.pageSlice.currentPage;
+export const currentPage = (state: RootState) => state.pageSlice.currentPage;
 export default pageSlice.reducer;

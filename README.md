@@ -21,15 +21,14 @@ npm start
 ### 서버
 
 ```md
-
-
-npm install
 npm run api
 ```
 
 <br/>
 
 ## 📌 배포 링크
+
+[]()
 
 <br/>
 
@@ -63,6 +62,8 @@ src
 
 ## ✅ Best Practice 선정 및 개발 과정
 
+[1. API 호출](https://github.com/preonbording-5/pre-onboarding-8th-4-5/wiki/API-%ED%98%B8%EC%B6%9C)  
+[2. Redux-Toolkit 비동기 처리](https://github.com/preonbording-5/pre-onboarding-8th-4-5/wiki/Redux-Toolkit-%EB%B9%84%EB%8F%99%EA%B8%B0-%EC%B2%98%EB%A6%AC)
 
 <br/>
 

@@ -127,11 +127,11 @@
       "createdAt": "2022-03-18"
     },
     {
-      "id": 19,
-      "profile_url": "https://picsum.photos/id/19/50/50",
       "author": "abc_19",
       "content": "막히면 대답은 빨리 해주나요",
-      "createdAt": "2022-03-19"
+      "createdAt": "2022-03-19",
+      "id": 19,
+      "profile_url": "https://picsum.photos/id/19/50/50"
     },
     {
       "id": 20,

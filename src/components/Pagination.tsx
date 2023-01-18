@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
-import { currnetPage, setCurrentPage, totalPage } from '../redux/PageSlice';
+import { currentPage, setCurrentPage, totalPage } from '../redux/PageSlice';
 
 export default function Pagination() {
   const dispatch = useDispatch();
-  const currentpage = useSelector(currnetPage);
+  const currentpage = useSelector(currentPage);
   const totalpage = useSelector(totalPage);
   const [totalPageArr, setTotalPageArr] = useState<number[]>([]);
 

@@ -6,7 +6,7 @@ import { getPageComments } from '../api/commentApi';
 import { COMMENT_NUMBER_ONEPAGE } from '../constants/constants';
 import { AppDispatch } from '../redux';
 import { commentsData, getAllCommentsData } from '../redux/CommentSlice';
-import { currnetPage, setTotalPage, totalPage } from '../redux/PageSlice';
+import { currentPage, setTotalPage, totalPage } from '../redux/PageSlice';
 import { commentDataType } from '../types/types';
 import CommentItem from './CommentItem';
 import Pagination from './Pagination';
@@ -15,7 +15,7 @@ import CommentInputForm from "./CommetInputForm";
 export default function CommentList() {
   const [pageComments, setPageComments] = useState<commentDataType[]>([]);
   const dispatch = useDispatch<AppDispatch>();
-  const currentpage = useSelector(currnetPage);
+  const currentpage = useSelector(currentPage);
   const totalpage = useSelector(totalPage);
   const commentData = useSelector(commentsData);
 
