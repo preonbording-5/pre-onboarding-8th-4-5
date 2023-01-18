@@ -9,10 +9,10 @@ import { commentsData, getAllCommentsData } from '../redux/CommentSlice';
 import { currnetPage, setTotalPage, totalPage } from '../redux/PageSlice';
 import { commentDataType } from '../types/types';
 import CommentItem from './CommentItem';
-import CommetInputForm from './CommetInputForm';
 import Pagination from './Pagination';
+import CommentInputForm from "./CommetInputForm";
 
-export default function CommetList() {
+export default function CommentList() {
   const [pageComments, setPageComments] = useState<commentDataType[]>([]);
   const dispatch = useDispatch<AppDispatch>();
   const currentpage = useSelector(currnetPage);
@@ -52,7 +52,7 @@ export default function CommetList() {
         />
       ))}
       <Pagination />
-      <CommetInputForm />
+      <CommentInputForm />
     </div>
   );
 }

@@ -45,8 +45,8 @@ src
 │   └── instance.ts
 ├── components
 │   ├── CommentItem.tsx
-│   ├── CommetInputForm.tsx
-│   ├── CommetList.tsx
+│   ├── CommentInputForm.tsx
+│   ├── CommentList.tsx
 │   └── Pagination.tsx
 ├── constants
 │   └── constants.ts
